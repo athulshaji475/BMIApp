@@ -7,11 +7,11 @@ import { useState } from 'react';
 
 function App() {
  
-  const [bmi,setCount] = useState('')
-  const [bmitype,setbmitype]=useState('')
+  const [bmi,setCount] = useState(0)
+  const [bmitype,setbmitype]=useState(0)
   const formData=(w,h)=>{
-console.log(w);
-console.log(h);
+    setCount(w)
+    setbmitype(h)
   }
 
 
