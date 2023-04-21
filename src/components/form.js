@@ -42,7 +42,7 @@ function Form({getData}) {
                 //set the weight as target controls walue
               />
 
-              <label for="height">Height(cm)</label>
+              <label for="height">Height(m)</label>
               <input
                 type="height"
                 className="form-control"

@@ -12,10 +12,13 @@ width: 50%;
    
 
 }
-
+.align{
+  display: flex;
+  justify-content:space-between
+}
 .bmiscore{
   width: 50%;
   margin-top: 15px;
   box-shadow:   10px 10px 10px 10px rgb(103, 103, 103);
-}
+ }
 

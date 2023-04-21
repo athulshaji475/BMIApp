@@ -1,15 +1,15 @@
 import React from 'react'
 
 function bmiscore(props) {
-const{bmino,bmit}=props  //destructuring
+const{bmino,bmitype}=props  //destructuring
   //console.log(props)
   return (
     
     <div className='bmiscore'>
       <div className='text-center shadow rounded p-4'>
-<div>Your BMI Score</div>
-<div className='p3 my-2 alert fs-1 alert-primary col--sm-4'>{bmino*bmit}</div>
-<div className='fs-3 fw-bold text-primary'>over weight</div>
+<div><h3>Your BMI Score</h3></div>
+<div className='p3 my-2 alert fs-1 alert-primary col--sm-4' style={{color:'red'}}><h2>{bmino}</h2></div>
+<div className='fs-3 fw-bold text-primary'><h5>{bmitype}</h5></div>
       </div>
     </div>
   )
