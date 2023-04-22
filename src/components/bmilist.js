@@ -1,15 +1,51 @@
 import React from 'react'
-
+import Table from 'react-bootstrap/Table';
 function bmilist() {
   return (
      
-    <div className='bmiscore'>
-      <div className='text-center shadow rounded p-4'>
-<div><h3>bmi list</h3></div>
-<div className='p3 my-2 alert fs-1 alert-primary col--sm-4'></div>
-<div className='fs-3 fw-bold text-primary'>over weight</div>
-      </div>
-    </div>
+    
+
+
+    <>
+    <Table striped bordered hover style={{marginLeft:"35px"}}>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Catogory</th>
+          <th>Weight Range</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Normal</td>
+          <td>18.5–24.9</td>
+          
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Underweight</td>
+          <td>{"<=18.5"}</td>
+         
+        </tr>
+        <tr>
+          <td>3</td>
+          <td >over weight</td>
+          <td>{"25–29.9"}</td>
+          
+        </tr>
+        <tr>
+          <td>4</td>
+          <td >Obesity </td>
+          <td>{">30"}</td>
+          
+        </tr>
+      </tbody>
+    </Table>
+    </>
+ 
+
   )
 }
 
